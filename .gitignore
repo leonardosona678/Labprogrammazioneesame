@@ -1,16 +1,14 @@
 
+*.log
+*.exe
+*.obj
+*.o
+CMakeCache.txt
 build/
 cmake-build-*/
 CMakeFiles/
-CMakeCache.txt
-Makefile
-*.exe
-*.txt
-*.log
 .idea/
 .vscode/
-*.o
-*.obj
-*.sln
 *.user
+*.sln
 *.vcxproj*
