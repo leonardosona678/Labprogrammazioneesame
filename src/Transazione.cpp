@@ -3,7 +3,7 @@
 
 Transazione::Transazione(const std::string& desc, double imp, const std::string& dt)
     : descrizione(desc), importo(imp), data(dt) {}
-
+//simula aggiunta funzione per gitgui
 std::string Transazione::getDescrizione() const {
     return descrizione;
 }
@@ -19,6 +19,7 @@ std::string Transazione::getData() const {
 std::string Transazione::toString() const { //per restituire la stringa di una transazione
     return data + ";" + descrizione + ";" + std::to_string(importo);
 }
+
 
 
 Transazione Transazione::fromString(const std::string& riga) { //per convertire una riga di testo (ad esempio letta da un file) in un oggetto Transazione

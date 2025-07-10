@@ -8,7 +8,7 @@
 void ContoCorrente::aggiungiTransazione(const Transazione& t) {
     transazioni.push_back(t);
 }
-
+//simula aggiunta funzione per gitgui
 double ContoCorrente::saldo() const {
     double totale = 0.0;
     for (const auto& t : transazioni) {
@@ -16,6 +16,7 @@ double ContoCorrente::saldo() const {
     }
     return totale;
 }
+
 
 void ContoCorrente::salvaSuFile(const std::string& nomeFile) const { //Salva ogni transazione in una riga del file, in formato testo. Così potremo leggerle successivamente con la funzione caricaDaFile.
     std::ofstream out(nomeFile); //Crea un oggetto chiamato out che apre (o crea) il file indicato da nomeFile. Funziona come std::cout, ma invece che stampare a schermo, scrive dentro un file

@@ -11,6 +11,8 @@ int leggiSceltaUtente() {
     }
     return scelta;
 }
+// Simulazione modifica per versionamento
+
 void mostraMenu() {
     std::cout << "\n--- MENU ---\n";
     std::cout << "1. Aggiungi transazione\n";
