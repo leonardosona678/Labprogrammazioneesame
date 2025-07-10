@@ -19,7 +19,7 @@ std::string Transazione::getData() const {
 std::string Transazione::toString() const { //per restituire la stringa di una transazione
     return data + ";" + descrizione + ";" + std::to_string(importo);
 }
-
+//aggiungo commit
 
 
 Transazione Transazione::fromString(const std::string& riga) { //per convertire una riga di testo (ad esempio letta da un file) in un oggetto Transazione
