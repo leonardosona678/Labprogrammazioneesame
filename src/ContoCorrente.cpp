@@ -30,7 +30,7 @@ void ContoCorrente::salvaSuFile(const std::string& nomeFile) const { //Salva ogn
 }
 //aggiungo funzione per caricare da file e convertire le stringhe in transazioni vere e proprie
 void ContoCorrente::caricaDaFile(const std::string& nomeFile) {
-    std::ifstream in(nomeFile);
+    std::ifstream in(nomeFile); //apro file in sola lettura
     if (!in) {
         std::cerr << "File non trovato: " << nomeFile << "\n";
         return;
