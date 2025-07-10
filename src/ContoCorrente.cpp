@@ -17,7 +17,7 @@ double ContoCorrente::saldo() const {
     return totale;
 }
 
-
+//aggiungo funzione per salvare stringhe su un file
 void ContoCorrente::salvaSuFile(const std::string& nomeFile) const { //Salva ogni transazione in una riga del file, in formato testo. Così potremo leggerle successivamente con la funzione caricaDaFile.
     std::ofstream out(nomeFile); //Crea un oggetto chiamato out che apre (o crea) il file indicato da nomeFile. Funziona come std::cout, ma invece che stampare a schermo, scrive dentro un file
     if (!out) { //Se il file esiste, viene sovrascritto. Se non esiste, viene creato
