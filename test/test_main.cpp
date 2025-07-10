@@ -10,7 +10,7 @@ TEST(ContoCorrenteTest, SaldoCorretto) {
     conto.aggiungiTransazione(Transazione("Prelievo", -30.0, "2025-07-02"));
     EXPECT_DOUBLE_EQ(conto.saldo(), 70.0);
 }
-
+//aggiunto anche secondo test
 TEST(TransazioneTest, ConversioneStringa) {
     Transazione t("Pagamento bolletta", -50.0, "2025-07-03");
     std::string s = t.toString();
@@ -19,4 +19,4 @@ TEST(TransazioneTest, ConversioneStringa) {
     EXPECT_DOUBLE_EQ(t2.getImporto(), t.getImporto());
     EXPECT_EQ(t2.getData(), t.getData());
 }
-
+//commit: aggiunti test
