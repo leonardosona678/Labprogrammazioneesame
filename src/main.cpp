@@ -29,13 +29,16 @@ int main() {
 
     do {
         mostraMenu();
-        std::cin >> scelta;
         try {
-            int scelta = leggiSceltaUtente();
-            // usa scelta (tra 0 e 4)
+            scelta = leggiSceltaUtente();
         } catch (const std::exception& e) {
             std::cerr << "Errore: " << e.what() << std::endl;
+            // Pulisce lo stato di errore e ignora il resto della riga per evitare loop infiniti
+            std::cin.clear();
+            std::cin.ignore(1000, '\n');;
+            continue; // torna all'inizio del ciclo
         }
+
 
 
 
